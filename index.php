@@ -72,6 +72,7 @@
             <div id="description-alert"><span>Diga a eles qual sua recompensa por uma tarefa....</span></div>
             <div>
                 <button publisher="#" class="btn-create"><span publisher="#">Criar Publicação</span><span publisher="#" class="mais">+</span></button>
+                
             </div>
         </div>
     </section>
@@ -80,10 +81,10 @@
     <main id="container-main">
         <div class="title-public">Publicações</div>
         <div class="container-feed">
+
             <?php
             include("PHP/modal.php");
-            connect_db();
-            consult_db()
+            consult_db();
             ?>
 
             <!--  
@@ -109,8 +110,12 @@
         </div>
     </main>
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="./JS/modalController.js"></script>
     <script src="./JS/index.js"></script>
+    
+
 </body>
 
 </html>
