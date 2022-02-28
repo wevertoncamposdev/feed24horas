@@ -1,0 +1,102 @@
+div.container-modal {
+    position: fixed;
+    background-color: #0000008f;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.active-modal{
+    display: block;
+}
+
+div.container-modal .modal-screen{
+    width: 80%;
+    height: 500px;
+    max-width: 600px;
+    min-width: 200px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#title-modal{
+    display: flex;
+    width: 100%;
+    height: 62px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.164);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #101010b7;
+}
+.tag-title{
+    font-family: cursive;
+    font-weight: 900;
+}
+
+#x{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#form-publiq {
+    padding: 30px 2.5rem;
+}
+
+#form-publiq .container-ipt input {
+   padding: 12px 8px;
+   border: none;
+   border-bottom: 1px solid #0000001c;
+   outline: none;
+   background-color: #00000000;
+   color: rgb(36, 36, 36);
+}
+
+#form-publiq .container-ipt {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+#form-publiq .container-ipt label{
+    font-size: 13px;
+    color: #a4a4a4;
+}
+
+.ipt-1{
+    width: 40px;
+}
+
+.ipt-3, .ipt-4, .ipt-5{
+    width: 100%;
+}
+
+#form-publiq .ctn-button{
+    margin-top: 10px;
+}
+
+#form-publiq .ctn-button input#publicar{
+    width: 100%;
+    padding: 13px 0px;
+    background-color: rgb(226, 10, 100);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@media (max-width: 500px){
+    div.container-modal .modal-screen{
+        width: 87%;
+    }
+}
+
